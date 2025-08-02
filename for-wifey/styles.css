@@ -1,0 +1,189 @@
+@font-face {
+  font-family: 'pokedex';
+  src: url('fonts/Pokemon\ GB.ttf') format('truetype');
+}
+
+body {
+  background: linear-gradient(to bottom, #f7bc3f, #c7a6ee);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  color: #333;
+}
+
+.countdown {
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  padding: 8px 12px;
+  border-radius: 12px;
+  background-color: #fcb69f;
+  font-weight: bold;
+  font-size: 14px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.scrapbook {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;     
+  align-items: flex-start;
+  gap: 20px;
+  max-width: 1000px;           
+  margin: 0 auto;              
+  padding: 80px 20px 20px;
+}
+
+.memory {
+  background-color: #fff2cd;
+  border: 1px solid #997527;
+  padding: 0;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+  overflow: hidden;
+  width: 240px;
+}
+
+.memory:hover {
+  transform: translateY(-6px) scale(1.02);
+  box-shadow: 0 12px 24px rgba(0,0,0,0.2);
+}
+
+.memory img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  display: block;
+}
+
+.memory p {
+  padding: 10px;
+  text-align: center;
+  background-color: #fff2cd;
+  font-family: 'Indie Flower', cursive;
+  color: #5e4511;
+}
+
+
+.game-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  padding: 12px 18px;
+  background-color: #fcb69f;
+  color: rgb(42, 41, 43);
+  border: none;
+  border-radius: 20px;
+  font-family: pokedex;
+  font-size: 14px;
+  cursor: pointer;
+  transition: 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.game-button:hover {
+  background-color: #b206c9;
+  color: rgb(252, 252, 252);
+}
+
+/* Trivia*/
+#difficulty-select p {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+#difficulty-select button {
+  margin: 5px;
+  padding: 10px 15px;
+  background-color: #dddddd;
+  border: none;
+  border-radius: 12px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+#difficulty-select button:hover {
+  background-color: #ebac24;
+}
+
+.quiz-container {
+  max-width: 500px;
+  margin: 100px auto;
+  padding: 30px;
+  background-color: #d190f7;
+  border-radius: 16px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+#question {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+#choices button {
+  display: block;
+  width: 100%;
+  margin: 8px 0;
+  padding: 10px;
+  background-color: #dddddd;
+;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+#choices button:hover {
+  background-color: #626364;
+  transform: scale(1.05);
+  transition: all 0.2s ease;
+}
+
+#choices.disabled-choices button:hover {
+  background-color: #dddddd;
+  transform: none;
+  cursor: default;
+}
+
+#next-btn {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #dddddd;
+  border: none;
+  border-radius: 8px;
+  color: rgb(10, 10, 10);
+  font-weight: bold;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+#next-btn:disabled {
+  display: none;
+}
+
+.hidden {
+  display: none;
+}
+
+#result {
+  margin-top: 20px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+#result button {
+  margin-top: 10px;
+  padding: 10px 20px;
+  background-color: #8d95a3;
+  border: none;
+  border-radius: 8px;
+  color: rgb(10, 10, 10);
+  font-weight: bold;
+  font-size: 14px;
+  cursor: pointer;
+}
